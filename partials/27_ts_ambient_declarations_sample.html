@@ -1,0 +1,21 @@
+<div class="slide left-text-slide">
+    <h1>TypeScript ES5</h1>
+    <pre class="highlightjs">
+		<code>
+			// arrify.ts
+            declare module "arrify" {
+              function arrify <T> (array: T | T[]): T[]
+
+              export = arrify
+            }
+
+
+            //index.ts
+            /// <reference path="arrify.d.ts" />
+
+            import arrify = require('arrify')
+
+            const result = arrify('hello world') // `typeof result` is `string[]`!
+		</code>
+	</pre>
+</div>

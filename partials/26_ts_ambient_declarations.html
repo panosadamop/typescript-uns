@@ -1,0 +1,4 @@
+<div class="slide left-text-slide">
+    <h1>TypeScript Ambient Declarations</h1>
+    <h2>Ambient declaration files are just another `.d.ts` files, but they don't define any `import` or `export`. <br><br>Remember back to when we discovered excluding `import` and `export` creates a "global" module. It's the same for `.d.ts` files, so if we omit `import` and `export` from the top level we can use it to document globals using the TypeScript type system.<br><br>Using `declare module "name"` creates that modules typings within the current project. It allows us to import `name` later on, which turns out to be a huge part of NodeJS development, or anyone using CommonJS for that fact.</h2>
+</div>

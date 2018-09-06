@@ -1,0 +1,23 @@
+<div class="slide left-text-slide">
+    <h1>TypeScript - A deeper dive: .d.ts Samples</h1>
+    <pre class="highlightjs">
+		<code>
+            //index.ts file
+            import { foo } from './foo'
+            console.log(foo())
+        </code>
+        <br>
+        <code>
+            //foo.d.ts file
+            export function foo (): number
+        </code>
+        <br>
+        <code>
+            //foo.js file
+            function foo () {
+                  return Math.random()
+                }
+        </code>
+    </pre>
+
+</div>

@@ -1,0 +1,41 @@
+<div class="slide left-text-slide">
+    <h1>TypeScript Destructuring</h1>
+    <pre class="highlightjs">
+		<code>
+// Destructuring refers to the ability to take an object, or array, and directly assign properties to variables.
+// This is actually a pretty handy little feature that you don't realise you need until you use it.
+// TypeScript, of course, supports types through this syntax as well.
+
+                const data = {
+                  fullName: 'Panagiotis Adamopoulos',
+                  email: 'adamopoulosp@unisystems.gr',
+                  luckyNumber: 3
+                }
+
+                // Object destructuring. Pick the properties you want.
+                const { luckyNumber } = data
+
+                console.log(luckyNumber)
+
+                const arrayData = [154, 'Panagiotis', true]
+
+                // Array destructuring. Pick the elements you want.
+                const [,me] = arrayData
+
+                console.log(me)
+
+                // Object and array destructuring makes it easier to return multiple pieces of data back to the user too!
+
+                function lookup (name: string) {
+                  const username = 'adamopoulosp'
+                  const email = 'adamopoulosp@unisystems.gr'
+
+                  return [username, email]
+                }
+
+                // However, an object might be clearer here, so judgement is wise.
+
+
+		</code>
+	</pre>
+</div>

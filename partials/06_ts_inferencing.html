@@ -1,0 +1,27 @@
+<div class="slide left-text-slide">
+	<h1>TypeScript Inferencing</h1>
+	<pre class="highlightjs">
+		<code>
+			/*
+			*  Type inferencing is used when the type is not provided explicitly.
+			*  For instance, using `var x = 10`, TypeScript can infer that `x` is a number.
+			*  Type inferencing is also used for function callbacks. For example:
+			*/
+
+			function takesCallback (cb: (error: Error) => any) {
+			  		return cb(null)
+				}
+
+			takesCallback(function (err) {
+					//=> `err instanceof Error`
+				})
+
+
+			// Interfaces can also use index types, which can be `string` or `number`.
+
+			interface Dictionary {
+					[index: string]: string
+				}
+		</code>
+	</pre>
+</div>
